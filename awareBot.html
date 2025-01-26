@@ -1,0 +1,24 @@
+<html>
+    <head>
+        Aware Bot
+    </head>
+    <title>
+
+    </title>
+    <body>
+        The Rough idea: A machine or box or bot that can be placed in varied environments, where it will collect data. <br> 
+        These will be further processed and fed back to the bot so that it can take some decisions on its own<br><br>
+        Topics covered so far: <br>
+        Signal processing<br>
+        Multiple communication<br>
+        Power <br>
+
+        25/1/25 <br><br>
+        There are small little nuances that can act as big roadblocks. Like I realised today, that connecting the battery power supply to the Arduino in opposite polarity won’t work. <br>
+        <p>
+I had spent a lot of time in setting up the LM317 linear voltage regulator circuit. I have a power supply of 11.1 V and I wanted to step it down to 5 V to power the board as well as the sensors. From the formula Vo = Vref(1+ r2/r1), r1 = 330 and r2 = 990 for 5V. but with this configuration the power led of the board was barely on, so adding a 330 resistor in series and increasing r2 to 1330 increased the Vo to the board but this also increases the voltage difference to the sensors. 
+I realised that signal from even ordinary sensors could be filtered and cleaned and insights could be obtained,  from this  Arduino Project : <a href="https://projecthub.arduino.cc/Johan_Ha/from-ky-039-to-heart-rate-8c660b#section6">Link</a>
+        </p>
+
+    </body>
+</html>
