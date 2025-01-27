@@ -25,6 +25,8 @@ I realised that signal from even ordinary sensors could be filtered and cleaned 
         <p>
             27 January, 2025<br>
             An observation: <br>
+            <img src="./images/circuit1.jpg" alt="circuit"><br>
+            The circuit<br>
             The linear hall magnetic sensor sets the output voltage to Vs/2 for 0 Gauss magnetic field and the output varies linearly. (from datasheet of 49E)<br>
             The supply voltage to the sensors was 6.29 V and the output of the hall magnetic sensor is set by this voltage. But the operating voltage of the arduino is 5V so it maps the voltage in 0 - 1023 based on this scale. <br>
             For every 4.9 mV, the analogRead increases by 1. <br>
