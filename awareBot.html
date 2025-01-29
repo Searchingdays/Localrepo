@@ -36,6 +36,24 @@ I realised that signal from even ordinary sensors could be filtered and cleaned 
             Cleared the sound analog reading by discarding all values less than mean.<br> The data is skewed so z-score, or quartile is not very useful.<br>
             Moving average filter to smoothen out the curve. Don't know if it is needed. 
 
+        </p><br>
+        <p>
+            29 January, 2025<br>
+            Observation and calculations:<br>
+            Lesser the light on the photo resistor??, more is the resistance. <br>
+            In case of no external V+, 
+            No much difference from the value of around 380, whether light is off or led is blocked by black cloth<br>Sensitivity is low<br>
+            Connection of the v+ makes the reading stable and decreases the noise. <br>
+            When A5 analog Input is configured as input pullup, the reading of the pin is given by VR1/ (R + R1) <br>
+            <img src="./images/circuit2.jpg" alt="image"><br>
+            Thus the reading increases as R1 increases.<br> The more light falling on the device, the value decreases, indicating a decrease in resistance. <br>
+            Thus the light receiver may be a photodiode.
+        </p><br>
+        <p>
+            Calibrating the KY-039 (Photodiode and LED)<br>
+            Under 5V operation<br>
+            Under 3.7V external<br>
+            Reading decreases as light intensity increases, or when the diode is covered. 
         </p>
 
     </body>
